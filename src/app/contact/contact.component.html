@@ -1,0 +1,11 @@
+<h3>Hubungi kami di: thinkjubilee.com</h3>
+
+<button (click)="onClick('IG')">Instagram</button>
+<button (click)="onClick('Twitter')">Twitter</button>
+<button (click)="onClick('Youtube')">Youtube</button>
+    
+<div [ngSwitch] = "socialMedia">
+    <div *ngSwitchCase = "'IG'">Instagram: @jub.id</div>
+    <div *ngSwitchCase = "'Twitter'">Twitter: @jubileeid</div>
+    <div *ngSwitchCase = "'Youtube'">Youtube: @jubileeid</div>
+</div>

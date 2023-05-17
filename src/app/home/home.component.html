@@ -1,0 +1,23 @@
+<h1>Halo!</h1>
+<p>Selamat datang di situs kami.</p>
+<p>Produk kami</p>
+  <!-- <ul>
+    <li *ngFor= "let buku of produkBuku">
+        {{ buku }}
+    </li>
+  </ul> -->
+
+<button mat-flat-button color="primary" (click)="tambahJudul()">Tambah Judul</button>
+
+<div *ngIf = 'objBuku.length > 0; else noData'>
+  <ul>
+    <li *ngFor= "let buku of objBuku">
+        {{ buku.judul }}
+        <button mat-flat-button color="warn" (click)="hapusJudul(buku)">Hapus Judul</button>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noData>
+  <p>Data Buku tidak Ditemukan</p>
+</ng-template>
