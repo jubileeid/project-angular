@@ -3,9 +3,12 @@
 <button (click)="onClick('IG')">Instagram</button>
 <button (click)="onClick('Twitter')">Twitter</button>
 <button (click)="onClick('Youtube')">Youtube</button>
+<button (click)="onClick('TikTok')">TikTok</button>
     
 <div [ngSwitch] = "socialMedia">
     <div *ngSwitchCase = "'IG'">Instagram: @jub.id</div>
     <div *ngSwitchCase = "'Twitter'">Twitter: @jubileeid</div>
     <div *ngSwitchCase = "'Youtube'">Youtube: @jubileeid</div>
+    <div *ngSwitchCase = "'TikTok'">TikTok: @jubileeid</div>
+
 </div>
